@@ -1,9 +1,8 @@
-package adapter;
+package com.example.noelia.proyctoandroidgit.adapter;
 import android.content.ContentValues;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.provider.BaseColumns;
-import android.provider.FontsContract;
 
 
 public class ProyectoAdapter {
