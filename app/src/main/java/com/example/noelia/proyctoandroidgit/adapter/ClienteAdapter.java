@@ -25,7 +25,7 @@ public class ClienteAdapter {
     private final static  String [] COLUMNS = {
             Columns.ID,Columns.NOMBRE,Columns.APELLIDO,Columns.TELEFONO};
 
-    public final static String CR_TABLE = "create table ifntexists" + NAME + "("+ Columns.ID + " integerprimarykeyautioncrement, " + Columns.NOMBRE+ " textnotnull, "+ Columns.APELLIDO+ " textnotnull, " + Columns.TELEFONO+ " text)";
+    public final static String CR_TABLE = "create table if not exists " + NAME + " ( "+ Columns.ID + " integer primary key autioncrement, " + Columns.NOMBRE+ " text not null, "+ Columns.APELLIDO+ " text not null, " + Columns.TELEFONO+ " text)";
 
 
 public  boolean insert (String nombre, String apellido, String telefono){

@@ -2,64 +2,66 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent" android:layout_height="match_parent"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context=".Principal"
 
     >
     <TextView
-        android:text="@string/Nombre"
+        android:text="Nombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id= "@+id/tvnombre"
         />
+
     <TextView
-        android:text="@string/Apellido"
+        android:id="@+id/tvapellido"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id= "@+id/tvapellido"
-        android:layout_alignBottom="id/etapellido"
-        android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        />
+        android:layout_alignTop="@+id/etapellido"
+        android:text="Apellido" />
 
     <TextView
-        android:text="@string/Telefono"
+        android:id="@+id/tvtelefono"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id= "@+id/tvtelefono"
-        android:layout_marginTop="29dp"
-
-        />
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="30"
-        android:id="@+id/etnombre"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
 
-        android:layout_alignMarginLeft="30dp"
-        android:layout_alignMarginStart="30dp"
-        />
+        android:layout_marginTop="146dp"
+        android:text="Telefono" />
+
     <EditText
-        android:layout_width="wrap_content"
+        android:id="@+id/etnombre"
+        android:layout_width="259dp"
         android:layout_height="wrap_content"
-        android:ems="15"
+        android:layout_alignEnd="@+id/etapellido"
+        android:layout_below="@+id/tvnombre"
+        android:ems="30" />
+
+    <EditText
+        android:id="@+id/etapellido"
+        android:layout_width="268dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvtelefono"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="-126dp"
+        android:layout_marginEnd="18dp"
+        android:ems="20" />
+
+    <EditText
         android:id="@+id/ettelefono"
-        />
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/etnombre"
+        android:layout_marginStart="-7dp"
+        android:layout_marginTop="153dp"
+        android:ems="15" />
 
     <Button
+        android:id="@+id/btnguardar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Guardar"
-        android:id="@+id/btnguardar"
-        android:layout_below="@+id/ettelefono"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignMarginRght="67dp"
-        android:layout_alignMarginEnd="67dp"
-        android:layout_alignMarginTop="35dp"
-        />
+        android:layout_centerInParent="true"
+        android:text="Guardar" />
 </RelativeLayout>

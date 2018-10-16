@@ -9,6 +9,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.example.noelia.proyctoandroidgit.aplication.BaseApplication;
+
 public class Principal extends AppCompatActivity {
 
     private EditText nombre;
@@ -36,17 +38,5 @@ public class Principal extends AppCompatActivity {
         });
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        return super.onOptionsItemSelected(item);
-    }
 
-    @Override
-    public boolean onCreateOptionsMenu(MenuItem item) {
-        int id= item.getItemId();
-        if(id == R.id.action_Settings){
-            return true;
-        }
-return super.onOptionsItemSelected(item);
-    }
 }
